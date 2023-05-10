@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatz Conjecture</title>
+    <link rel="shortcut icon" href="plus.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="part1">
+        <h1>Learn about the Collatz Conjecture</h1>
+        <p>The collatz conjecture is an unsolved mathematical problem, hence it being a conjecture and not a theorum. It was named after Lothar Collatz, who personally worked on it. He is claimed to be the creator, although he denies being the first to work on it.(study.com) A whole, positive integer, X, is given. If it is odd, apply 3x + 1 and if it is even, apply x/2. This process is meant to be applied continuously. However, given time, the initial number so far always repeats in a cycles of 1, 2, 4, and back to 1[study]. The issue of the conjecture is whether or not this applies to all numbers, or just the ones that have been applied so far. Perhaps you will be able to find an exception! source:https://study.com/academy/lesson/history-of-the-collatz-conjecture.html
+        </p>
+        <form class="DoubleInputButton"><input type="number" placeholder="Pick a Number" id="input"><button id="submit">Submit</button></form>
+    </div>
+    <div class="part2">
+        <div width="400" height="200"><canvas id="myChart" class="myChart" width="400" height="200" ></canvas></div>
+        <div class="info" id="info">Test</div>
+    </div>
+</div>    
+
+</body>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>  -->
+<script src="collatz.js"></script>
+</html>
