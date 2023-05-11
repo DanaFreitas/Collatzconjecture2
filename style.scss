@@ -8,4 +8,6 @@ body {background-color: #1A1A1A; color:white;}
 
 .container {width:100%; display:flex; align-items:center; justify-content: space-between;  .part1{width:50%; display:flex; align-items:center; justify-content: space-evenly; flex-direction: column; margin-top: 3rem; h1{font-size: 3rem;} p{font-size: 1.5rem; width:60ch; text-align: center; margin-top: 3rem; color:grey;} .DoubleInputButton{margin-top: 3rem; input, button{padding:.8rem; margin-left: .8rem; margin-right: .8rem;}}}}
 
-.part2{width:50%; height:50rem;.info{width:50%;height:50rem;}.myChart{z-index: 10;}}
+.part2{width:50%; height:5rem;.info{width:50%;height:5rem;}.myChart{z-index: 10; height:2rem; width:2rem;}}
+
+.info {height:2rem; width:2rem;}

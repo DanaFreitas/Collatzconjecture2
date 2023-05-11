@@ -46,12 +46,19 @@ body {
 
 .part2 {
   width: 50%;
-  height: 50rem;
+  height: 5rem;
 }
 .part2 .info {
   width: 50%;
-  height: 50rem;
+  height: 5rem;
 }
 .part2 .myChart {
   z-index: 10;
+  height: 2rem;
+  width: 2rem;
+}
+
+.info {
+  height: 2rem;
+  width: 2rem;
 }/*# sourceMappingURL=style.css.map */
