@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 .container .part1 {
   width: 50%;
@@ -61,4 +62,6 @@ body {
 .info {
   height: 2rem;
   width: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
