@@ -6,8 +6,12 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 body {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: white;
 }
 
@@ -30,19 +34,38 @@ body {
   font-size: 3rem;
 }
 .container .part1 p {
-  font-size: 1.5rem;
-  width: 60ch;
+  font-size: 1rem;
+  width: 100%;
   text-align: center;
   margin-top: 3rem;
   color: grey;
 }
 .container .part1 .DoubleInputButton {
   margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.1rem;
 }
-.container .part1 .DoubleInputButton input, .container .part1 .DoubleInputButton button {
+.container .part1 .DoubleInputButton input,
+.container .part1 .DoubleInputButton button {
   padding: 0.8rem;
   margin-left: 0.8rem;
   margin-right: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 2rem;
+}
+.container .part1 .DoubleInputButton input {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .container .part1 .DoubleInputButton {
+    flex-direction: row;
+  }
 }
 
 .part2 {
@@ -58,10 +81,28 @@ body {
   height: 2rem;
   width: 2rem;
 }
+.part2 #reset {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 0.8rem;
+  font-size: 2rem;
+}
+.part2 #ResetForm {
+  display: flex;
+  align-items: center;
+}
 
 .info {
   height: 2rem;
   width: 2rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

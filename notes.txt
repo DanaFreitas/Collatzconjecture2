@@ -1,1 +1,18 @@
+6/2
+
 This is different from the first version. I will need to change the imge earlier and load this. 
+Turns out there was already a repo for it, so I needlyly made a new branch.
+Figured out legend. Tried to input in wrong location.
+
+
+Need a reset button.
+Need to format the text and graph more responsively
+
+Did the reset button.
+
+The Submit needs to be done better in mobile.
+
+
+6/3
+
+when use <button> vs <a>

@@ -1,17 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
 
+html {
+  font-size: calc(15px + 0.390625vw);
+}
 
-*{ margin:0; padding: 0; box-sizing: border-box;     font-family: 'Roboto Condensed', sans-serif;}
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
 
-body {background-color: #1A1A1A; color:white;}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  .part1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 3rem;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 3rem;
+      color: grey;
+    }
 
-.container {width:100%; display:flex; align-items:center; justify-content: space-between; flex-direction: column;
-   .part1{width:50%; display:flex; align-items:center; justify-content: space-evenly; flex-direction: column; margin-top: 3rem;
-     h1{font-size: 3rem;}
-      p{font-size: 1.5rem; width:60ch; text-align: center; margin-top: 3rem; color:grey;} 
-     .DoubleInputButton{margin-top: 3rem; input, button{padding:.8rem; margin-left: .8rem; margin-right: .8rem;}}}}
+    .DoubleInputButton {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      font-size: 0.1rem;
 
-.part2{width:50%; height:5rem;.info{width:50%;height:5rem;}.myChart{z-index: 10; height:2rem; width:2rem;}}
+      input,
+      button {
+        padding: 0.8rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: 2rem;
+      }
 
-.info {height:2rem; width:2rem;}
+      input {
+        font-size: 1rem;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .DoubleInputButton {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+.part2 {
+  width: 50%;
+  height: 5rem;
+  .info {
+    width: 50%;
+    height: 5rem;
+  }
+  .myChart {
+    z-index: 10;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #reset {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 0.8rem;
+    font-size: 2rem;
+  }
+
+  #ResetForm {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.info {
+  height: 2rem;
+  width: 2rem;
+}
+.button:hover {
+  cursor: pointer;
+  color: red;
+}
