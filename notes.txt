@@ -15,4 +15,6 @@ The Submit needs to be done better in mobile.
 
 6/3
 
-when use <button> vs <a>
+when use <button> vwork tree clean means there have been no changes made
+
+part2info width neds to be responsive
