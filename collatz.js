@@ -8,6 +8,8 @@ const calculate = document.getElementById("submit");
 
 const reset = document.getElementById("reset");
 
+const chartcontain = document.getElementById("chartcontain");
+
 calculate.addEventListener("click", () => {
 
       let Yvalue = [];
@@ -43,7 +45,7 @@ calculate.addEventListener("click", () => {
    
           datasets: [
             {    
-              label: "Value of the initial number as it is modified",
+              label: "Initial number's value",
               fill: false,
               lineTension: 0,
               backgroundColor: "#FFFFFF",
@@ -53,8 +55,11 @@ calculate.addEventListener("click", () => {
           ],
         },
         options: {
-   
-        legend: {display:true},
+        
+          aspectRatio: .75,
+          //responsive:true,
+          //maintainAspectRatio: false,
+          legend: {display:true},
             title: {
             display: true,
             fontSize: 16,
@@ -65,7 +70,7 @@ calculate.addEventListener("click", () => {
               
               
               
-                { min: 1, max: Math.max(...Yvalue) }
+                { min: 1, max: Math.max(...Yvalue) * 1.1 }
                 
               
             
@@ -76,9 +81,8 @@ calculate.addEventListener("click", () => {
       display.textContent =  "The final number is " + parseinput + " and it took " + initial + " iterations.";
 
 
-      window.scrollTo({top:document.body.scrollHeight, left:0, behavior: "smooth"})
-      
 
+      window.scrollTo({top:chartcontain.offsetTop, left:0, behavior: "smooth"})
 })
 
 

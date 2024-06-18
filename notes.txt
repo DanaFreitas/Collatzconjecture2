@@ -18,3 +18,5 @@ The Submit needs to be done better in mobile.
 when use <button> vwork tree clean means there have been no changes made
 
 part2info width neds to be responsive
+
+make flex direction row for the buttons mobile, but wide?

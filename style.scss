@@ -74,17 +74,24 @@ body {
 }
 
 .part2 {
-  width: 75%;
-  height: 5rem;
+//  width: 75%;
+ // height: 2rem;
+  
+  .myChart {
+   // z-index: 10;
+   //height: 30em;
+   // width: 2rem;
+    padding:1rem 0 1rem 0;
+    aspect-ratio: 1 / 5;
+  //margin:5rem;
+  }
+
+
   .info {
     width: 100%;
     height: 5rem;
   }
-  .myChart {
-    z-index: 10;
-    height: 2rem;
-    width: 2rem;
-  }
+
 
   #reset {
     background-color: white;
