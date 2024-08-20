@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #30504f;
   color: white;
 }
 
@@ -38,7 +38,7 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 3rem;
-  color: grey;
+  color: white;
 }
 .container .part1 .DoubleInputButton {
   margin-top: 3rem;

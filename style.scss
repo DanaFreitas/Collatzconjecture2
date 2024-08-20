@@ -9,11 +9,13 @@
 
 html {
   font-size: calc(15px + 0.390625vw);
+//font-size: 2px;
 }
 
 body {
-  background-color: #1a1a1a;
-  color: white;
+ // background-color: #1a1a1a;
+ background-color: #30504f;
+ color: white;
 }
 
 .container {
@@ -37,7 +39,7 @@ body {
       width: 100%;
       text-align: center;
       margin-top: 3rem;
-      color: grey;
+      color: white;
     }
 
     .DoubleInputButton {
