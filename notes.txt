@@ -20,3 +20,13 @@ when use <button> vwork tree clean means there have been no changes made
 part2info width neds to be responsive
 
 make flex direction row for the buttons mobile, but wide?
+
+
+8/20
+
+have new number trigger reset too.
+fix initial height
+
+fixed hieght. MIGHT be problem with the reset. 
+
+have the canvas reset if theres a number as well    

@@ -5,11 +5,63 @@ const calculate = document.getElementById("submit");
 const reset = document.getElementById("reset");
 
 const chartcontain = document.getElementById("chartcontain");
-
+let defaultchart
+let finishedchart
 addEventListener("load", () => {
-});
+  defaultchart =  new Chart(ctx, {
+    type: 'line', // You can change this to 'bar', 'pie', etc.
+    data: {
+        labels: [], // No labels
+        datasets: [{
+        }]
+    },
+    options: {
+      aspectRatio: 0.75,
+
+        scales: {
+            x: {
+                beginAtZero: true
+            },
+            y: {
+
+
+
+              min: 1,
+              max:10,
+              ticks: {
+                color: "white",
+              },
+    
+
+
+
+            }
+        },
+        plugins: {
+            legend: {
+              display:false
+            },
+            
+        }
+    }
+});  })
+
+
 
 calculate.addEventListener("click", () => {
+
+
+if(typeof defaultchart !== undefined){
+  defaultchart.destroy();
+
+
+}
+ if (typeof finishedchart !== "undefined"){
+
+  finishedchart.destroy();
+
+}
+
   let Yvalue = [];
 
   let Xvalue = [0];
@@ -30,7 +82,7 @@ calculate.addEventListener("click", () => {
     Xvalue.push(initial);
   }
 
-  new Chart(ctx, {
+finishedchart =  new Chart(ctx, {
     type: "line",
 
     data: {
@@ -79,8 +131,11 @@ calculate.addEventListener("click", () => {
     " iterations.";
 
   window.scrollTo({ top: chartcontain.offsetTop, left: 0, behavior: "smooth" });
+
+return finishedchart;
 });
 
 reset.addEventListener("click", () => {
   location.reload();
+
 });
